@@ -1,3 +1,15 @@
+Documentacion
+Este proyecto es un CRUD se crea con Laravel 8 para realizar registro y control de usuarios con sus respectivos roles para darles permisos de acuerdo a si es:
+Administrador
+Supervisor
+Agente
+
+NOTA todos los usuarios tiene clave: del 1 al 8
+admin@hotmail.com es el Administrador principal
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
