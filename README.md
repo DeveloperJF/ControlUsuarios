@@ -1,11 +1,12 @@
 Documentacion
-Este proyecto es un CRUD se crea con Laravel 8 para realizar registro y control de usuarios con sus respectivos roles para darles permisos de acuerdo a si es:
-Administrador
-Supervisor
-Agente
+- Este proyecto es un CRUD se crea con Laravel 8 para realizar registro y control de usuarios con sus respectivos roles para darles permisos de acuerdo a si es:
+  Administrador
+  Supervisor
+  Agente
 
-NOTA todos los usuarios tiene clave: del 1 al 8
-admin@hotmail.com es el Administrador principal
+- En la carpeta database se encuentra el archivo de administracion.sql para poder subirlo a MySQL.
+- Todos los usuarios tiene clave: del 1 al 8 usuario: admin@hotmail.com (Administrador principal)
+- 
 
 
 
