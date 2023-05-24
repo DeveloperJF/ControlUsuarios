@@ -1,4 +1,4 @@
-### Documentacion
+## Documentacion
 - Este proyecto es un CRUD se crea con Laravel 8 para realizar registro y control de usuarios con sus respectivos roles para darles permisos de acuerdo a si es:
 - Administrador
 - Supervisor
