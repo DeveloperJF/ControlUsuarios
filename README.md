@@ -6,7 +6,6 @@ Documentacion
 
 - En la carpeta database se encuentra el archivo de administracion.sql para poder subirlo a MySQL.
 - Todos los usuarios tiene clave: del 1 al 8 usuario: admin@hotmail.com (Administrador principal)
-- 
 
 
 
