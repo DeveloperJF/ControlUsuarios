@@ -1,14 +1,3 @@
-## Documentacion
-- Este proyecto es un CRUD se crea con Laravel 8 para realizar registro y control de usuarios con sus respectivos roles para darles permisos de acuerdo a si es:
-- Administrador
-- Supervisor
-- Agente
-
-- En la carpeta database se encuentra el archivo de administracion.sql para poder subirlo a MySQL.
-- Todos los usuarios tiene clave: del 1 al 8 usuario: admin@hotmail.com (Administrador principal).
-
-
-
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
@@ -19,58 +8,41 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Dashboard de registro de usuarios y roles
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Es una Aplicación web para realizar registro de usuarios, roles y control de los mismo con Laravel 8. Puede crear, modificar, eliminar, ver los diferentes registros que estén en la plataforma. Es un SPA en la que todo se ve en una sola página.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Herramientas que se utilizaron en su respectivo orden, así:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [Laravel 8](https://laravel.com/docs/8.x "Laravel 8")
+- Laravel UI Stisla 
+- Laravel permission - Spatie
+- Laravel Collective
+- Base de datos MySQL (administracion.sql)
+Este archivo se encuentra en la carpeta en `ctrlUsuarios\database\administracion.sql`
 
-## Learning Laravel
+#### ¿Cómo Descargar el Dashboard?
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- En el botón que se encuentra en la parte superior derecha del proyecto que dice `<>code` tendrá las opciones para clonar el repositorio o descargar los archivos del proyecto en formato `.zip`
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Una vez tenga los archivos en su equipo los podrá llevar al servidor local de su preferencia como es *Xampp, Wampserver*
 
-## Laravel Sponsors
+- Cuando ya tenga la ubicación deberá ir a la carpeta del proyecto para ubicar la base de datos que esta en `ctrlUsuarios\database\administracion.sql`.
+- Cree en MySQL una BD llamada administración, una vez la tenga vaya a la opción de `importar` dentro de esta base de datos seleccione la opción `examinar` ahí tendrá que elegir la ubicación del archivo `.sql` que anteriormente nombre.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Ya teniendo esto configurado desde CMD o desde la terminal de Visual Studio Code ingresa: `php artisan serve` Esto va a tardar un tiempo mientras que carga todo (Solo es la primera vez); ya terminado este procedimiento le dará `Ctrl + clic del mouse` a la dirección que aparece de la url local que es: [http://127.0.0.1:8000](http://localhost "http://127.0.0.1:8000") y listo.
 
-### Premium Partners
+#### ¿Cómo ingreso al proyecto?
+El acceso a la plataforma se puede dar con el usuario, Súper-administrador es:
+> email: admin@hotmail.com
+> password: 12345678
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+------------
 
-## Contributing
+#### Contenido
+- CRUD
+- Creación de usuario, roles y permisos
+- Control de usuario
+- Creación de autenticación
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+> Nota: Espero que con esto sea de su agrado para que pueda identificar como funciona y que puede implementarlo para otros proyectos personales o para empresa.
